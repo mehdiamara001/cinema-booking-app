@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#101218">
+	<title>Create an account — Lumière Cinema</title>
+	<link rel="stylesheet" href="/css/styles.css">
+	<script type="module" src="/js/register.js"></script>
+</head>
+<body class="register-page">
+	<header class="site-header">
+		<a class="brand" href="/" aria-label="Lumière Cinema home"><span class="brand-mark">L</span><span>LUMIÈRE <small>CINEMA</small></span></a>
+		<nav class="header-nav"><a href="/">Back to films</a></nav>
+	</header>
+	<main class="register-layout">
+		<section class="register-aside"><p class="eyebrow">WELCOME TO THE SHOW</p><h1>Every great<br>night starts<br><span>with a ticket.</span></h1><p>Make an account to reserve your favorite seat and get straight to the good part.</p><div class="register-decoration" aria-hidden="true">✦ &nbsp; ✦ &nbsp; ✦</div></section>
+		<section class="register-card">
+			<p class="eyebrow">JOIN LUMIÈRE</p><h2>Create your account</h2><p class="muted">A few details and you’re ready for the previews.</p>
+			<form id="registration-form" class="stacked-form">
+				<label>Full name<input name="name" type="text" autocomplete="name" maxlength="100" placeholder="Your name" required></label>
+				<label>Email address<input name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required></label>
+				<label>Password<input name="password" type="password" autocomplete="new-password" minlength="1" maxlength="200" placeholder="Choose a password" required></label>
+				<p class="form-hint">Your password is securely hashed when it reaches the cinema server.</p>
+				<p class="feedback" id="registration-feedback" role="status" aria-live="polite"></p>
+				<button class="button button-primary button-full" type="submit">Create account</button>
+			</form>
+			<p class="auth-register">Already have an account? <a href="/">Continue to booking</a></p>
+		</section>
+	</main>
+	<footer class="site-footer"><span>© LUMIÈRE CINEMA</span><span>MADE FOR MOVIE NIGHTS</span></footer>
+</body>
+</html>
