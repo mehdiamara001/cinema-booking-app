@@ -132,17 +132,19 @@ With the application running, open Swagger UI at `http://localhost:8080/swagger-
 ## Frontend
 
 Spring Boot serves the vanilla HTML, CSS, and JavaScript frontend from `src/main/resources/static`. Open `http://localhost:8080/` for movie browsing and seat booking, or `http://localhost:8080/register.html` to register. The browser calls the same-origin REST API with `fetch()`. The sequence is Movie → Screening → Room → Seat → Booking; room names are looked up through the existing cinema/room endpoints, while booked seats are shown as unavailable using the screening bookings endpoint. The server remains responsible for the final booking checks.
+## Screenshots
 
-### Screenshots
+### Home / Movies
+![Home page](docs/screenshots/home.png)
 
-Add real browser captures under `docs/screenshots/` before publishing. These placeholders describe useful captures; no mock screenshots are included:
+### Seat selection
+![Seat selection](docs/screenshots/seats.png)
 
-| Screenshot | Capture |
-| --- | --- |
-| `docs/screenshots/movie-selection.png` | Desktop movie cards and screening choices |
-| `docs/screenshots/seat-selection.png` | Selected screening, room, and seat map |
-| `docs/screenshots/registration-mobile.png` | Registration form at a narrow mobile width |
+### Booking confirmation
+![Booking confirmation](docs/screenshots/booking-confirmation.png)
 
+### Swagger UI
+![Swagger UI](docs/screenshots/swagger.png)
 ## Main API endpoints
 
 | Method | Path | Purpose | Authentication |
